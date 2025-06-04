@@ -2,7 +2,22 @@
 <html>
 <head>
   <title>Demand Forecasting App</title>
-  <meta http-equiv="refresh" content="0; url='http://34.57.10.183:8501/'" />
+  <script>
+    // Redirect using JavaScript with obfuscated URL components
+    window.onload = function() {
+      const parts = [
+        window.location.protocol === 'https:' ? 'https' : 'http',
+        [34,57,10,183].map(n => parseInt(n)).join('.'),
+        8501
+      ];
+      window.location.href = `${parts[0]}://${parts[1]}:${parts[2]}/`;
+    }
+  </script>
 </head>
-<body></body>
+<body>
+  <noscript>
+    <p>JavaScript is required for redirection. Please enable JavaScript or visit:</p>
+    <a href="#">http://34.57.10.183:8501/</a>
+  </noscript>
+</body>
 </html>
